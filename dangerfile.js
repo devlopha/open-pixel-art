@@ -42,8 +42,21 @@ function doesJsonMatchSchema(json) {
     actualKeys.includes(expectedKey)
   );
 
-  return doesJsonHaveExpectedNumberOfKeys && doesJsonContainExpectedKeys;
 }
+
+async function evaluatePixelChanges(jsonPatch) {
+  if (!doesJsonMatchSchema(jsonPatch.after)) {
+    fail(stripIndents`Your pixels.json file does not match the expected schema.
+
+    expected schema: 
+    {
+      data: [
+        // pixels go here
+      ]
+    }
+    `);
+    return false;
+  }
 
 function convertJsonToPixelSet({ data }) {
   const pixelSet = new Set();

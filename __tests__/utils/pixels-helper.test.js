@@ -5,16 +5,21 @@ const {
   pixelsToString
 } = require('../../utils/pixels-helper');
 
-describe('sortPixels', () => {
-  test('sorts pixels in y ascending order', () => {
-    const old = {
-      data: [
-        { y: 1, x: 2, color: '#000000', username: 'dkundel' },
-        { y: 2, x: 2, color: '#000001', username: 'twilio' },
-        { y: 1, x: 3, color: '#000002', username: 'twilio-labs' },
-        { y: 0, x: 1, color: '#000002', username: 'panda' }
-      ]
-    };
+function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
     const sorted = sortPixels(old);
     expect(sorted).toEqual({

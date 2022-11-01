@@ -8,16 +8,21 @@ async function loadJson(dataJsonFile) {
   const filePath = path.resolve(__dirname, '../_data/', dataJsonFile);
   const pixelJsonString = await readFile(filePath, 'utf8');
   return JSON.parse(pixelJsonString);
-}
-
-describe('pixels', () => {
-  test('every username should only claim one pixel', async () => {
-    const pixels = await loadJson('pixels.json');
-    const usernameSet = new Set();
-    for (const pixel of pixels.data) {
-      if (pixel.username !== '<UNCLAIMED>') {
-        let username = usernameSet.has(pixel.username)
-          ? pixel.username
+}function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
           : undefined;
         expect(username).toBeUndefined();
       }

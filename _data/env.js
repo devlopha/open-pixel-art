@@ -4,20 +4,14 @@ module.exports = {
 {
   "data": [
     {"y": 0, "x": 0, "color": "#ff9900", "username": "scottmwalton"},
-    {"y": 0, "x": 1, "color": "#0d6d6e", "username": "ViniciusPolachini"},
-    {"y": 0, "x": 2, "color": "#50325B", "username": "jesuslerma"},
-    {"y": 0, "x": 3, "color": "#FFFF00", "username": "Beowulfdgo"},
-    {"y": 0, "x": 4, "color": "#a51c30", "username": "lonerz"},
-    {"y": 0, "x": 5, "color": "#b51c30", "username": "rosemhong"},
-    {"y": 0, "x": 6, "color": "#cb81e6", "username": "adriafh"},
-    {"y": 0, "x": 7, "color": "#00cc00", "username": "Praserih"},
-    {"y": 0, "x": 8, "color": "#F36E37", "username": "etakao"},
-    {"y": 0, "x": 9, "color": "#ff0000", "username": "miquelfire"},
-    {"y": 0, "x": 10, "color": "#FFFF00", "username": "draganov89"},
-    {"y": 0, "x": 11, "color": "#000000", "username": "martinoywa"},
-    {"y": 0, "x": 12, "color": "#fc03be", "username": "bobcat4848"},
-    {"y": 0, "x": 13, "color": "#FFFFFF", "username": "HeinKhantZaw"},
-    {"y": 0, "x": 14, "color": "#ff00ff", "username": "obstaclez"},
+function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
     {"y": 0, "x": 15, "color": "#F36E37", "username": "Helene-code"},
     {"y": 0, "x": 16, "color": "#2cdf63", "username": "Sirius-A-C"},
     {"y": 0, "x": 17, "color": "#0F7DC2", "username": "covalentbond"},

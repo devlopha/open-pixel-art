@@ -1,17 +1,27 @@
 jest.mock('danger', () => {
   return {
-    message: jest.fn(),
-    fail: jest.fn(),
-    markdown: jest.fn(),
-    danger: {
-      git: {},
-      github: {}
-    }
-  };
-});
-
+    metandard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 const danger = require('danger');
 
+const {
+  allPatchesAreForTheSamePixel,
+  evaluatePixelChanges,
+  getIndexFromPath,
+  handleMultipleFileChanges,
+  handleSuccessfulSubmission,
+  hasOnlyPixelChanges,
+  isValidNewPixelSubmission
+} = require('../dangerfile');
 const {
   allPatchesAreForTheSamePixel,
   evaluatePixelChanges,

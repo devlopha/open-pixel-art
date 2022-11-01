@@ -13,7 +13,14 @@ header {
 
   padding-bottom: 0;
 }
-
+function pixelSortFunction(a, b) {
+  const xDiff = a.x - b.x;
+  const yDiff = a.y - b.y;
+header {
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 .nav-item {
   display: inline-block;
 }
